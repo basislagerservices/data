@@ -47,6 +47,7 @@ jobs:
       - name: 'Run crawler'
         run: |
           tickergadse-crawler \
+            --ticker-id 2000130527798 \
             --once \
             --continue \
             --state-file ~/crawler-state.pickle \

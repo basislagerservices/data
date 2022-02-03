@@ -47,6 +47,7 @@ jobs:
       - name: 'Run book generator for Unsin(n)kable III'
         run: |
           tickergadse-book \
+            --ticker-id 2000130527798 \
             --book logbook \
             --output books/unsinnkable.pdf \
             --output books/unsinnkable.epub
@@ -54,6 +55,7 @@ jobs:
       - name: 'Run book generator for Raumschiff Ersterpreis'
         run: |
           tickergadse-book \
+            --ticker-id 2000130527798 \
             --book ersterpreis \
             --output books/ersterpreis.pdf \
             --output books/ersterpreis.epub
