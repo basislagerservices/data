@@ -61,7 +61,6 @@ jobs:
       - name: 'Commit changes'
         uses: EndBug/add-and-commit@v8
         with:
-          author_name: 'Basislager Services'
-          author_email: 'services@basislager.fun'
+          default_author: github_actions
           message: 'Update books'
           add: 'books'
