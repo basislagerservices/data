@@ -48,6 +48,7 @@ jobs:
         run: |
           tickergadse-book \
             --ticker-id 2000130527798 \
+            --ticker-id 2000133087737 \
             --book logbook \
             --output books/unsinnkable.pdf \
             --output books/unsinnkable.epub
@@ -56,6 +57,7 @@ jobs:
         run: |
           tickergadse-book \
             --ticker-id 2000130527798 \
+            --ticker-id 2000133087737 \
             --book ersterpreis \
             --output books/ersterpreis.pdf \
             --output books/ersterpreis.epub

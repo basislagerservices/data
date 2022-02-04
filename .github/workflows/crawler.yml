@@ -48,6 +48,7 @@ jobs:
         run: |
           tickergadse-crawler \
             --ticker-id 2000130527798 \
+            --ticker-id 2000133087737 \
             --once \
             --continue \
             --state-file ~/crawler-state.pickle \
