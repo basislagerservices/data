@@ -34,7 +34,7 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          path: '~/crawler-state.pickle'
+          path: ~/crawler-state.pickle
           key: '${{runner.os}}-crawler-state-${{secrets.CACHE_VERSION}}'
 
       - name: 'Install dependencies'
@@ -51,7 +51,7 @@ jobs:
             --ticker-id 2000133087737 \
             --once \
             --continue \
-            --state-file ~/crawler-state.pickle \
+            --state-file $HOME/crawler-state.pickle \
             --output ranking/ranking.json
 
       - name: 'Commit changes'
