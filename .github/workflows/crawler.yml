@@ -49,6 +49,7 @@ jobs:
           tickergadse-crawler \
             --ticker-id 2000130527798 \
             --ticker-id 2000133087737 \
+            --ticker-id 2000134489588 \
             --once \
             --continue \
             --state-file crawler-state.pickle \
