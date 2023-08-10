@@ -40,9 +40,10 @@ jobs:
       - name: 'Install dependencies'
         run: |
           sudo apt-get update
-          sudo apt-get install -y \
-            chromium-browser \
-            chromium-chromedriver
+          curl -o /tmp/chromium-browser.deb             http://archive.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-browser_112.0.5615.49-0ubuntu0.18.04.1_amd64.deb
+          curl -o /tmp/chromium-browser-l10n.deb        http://archive.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-browser-l10n_112.0.5615.49-0ubuntu0.18.04.1_all.deb
+          curl -o /tmp/chromium-codecs-ffmpeg-extra.deb http://archive.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-codecs-ffmpeg-extra_112.0.5615.49-0ubuntu0.18.04.1_amd64.deb
+          sudo apt -f -y install /tmp/chromium-*.deb
           pip install git+https://github.com/basislagerservices/tickergadse.git
 
       - name: 'Run crawler'
