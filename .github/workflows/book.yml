@@ -62,6 +62,7 @@ jobs:
             --ticker-id 2000144473769 \
             --ticker-id 3000000108553 \
             --ticker-id 3000000179807 \
+            --ticker-id 3000000186882 \
             --book logbook \
             --output books/unsinnkable.pdf \
             --output books/unsinnkable.epub
@@ -81,6 +82,7 @@ jobs:
             --ticker-id 2000144473769 \
             --ticker-id 3000000108553 \
             --ticker-id 3000000179807 \
+            --ticker-id 3000000186882 \
             --book ersterpreis \
             --output books/ersterpreis.pdf \
             --output books/ersterpreis.epub
