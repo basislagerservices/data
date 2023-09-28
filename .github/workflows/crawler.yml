@@ -32,10 +32,12 @@ jobs:
         with:
           python-version: '3.11'
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: 'crawler-state.pickle'
-          key: '${{runner.os}}-crawler-state-${{secrets.CACHE_VERSION}}'
+          key: 'state-${{ runner.os }}-${{ github.run_id }}'
+          restore-keys: |
+            state-${{ runner.os }}
 
       - name: 'Install dependencies'
         run: |
