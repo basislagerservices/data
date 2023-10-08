@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+#
+# Copyright 2023 Basislager Services
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+
+"""Modify number of gold stars for a user."""
+
+import argparse
+import json
+import os
+import sys
+
+
+SCRIPTDIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("user", help="username or ID")
+    parser.add_argument("stars", type=int, help="number of stars")
+    args = parser.parse_args()
+
+    with open(os.path.join(SCRIPTDIR, "..", "ranking", "ranking.json")) as fp:
+        ranking = json.load(fp)
+
+    with open(os.path.join(SCRIPTDIR, "..", "ranking", "goldstar.json")) as fp:
+        goldstar = json.load(fp)
+
+    for user in ranking["users"]:
+        if str(user["id"]) == args.user or user["name"] == args.user:
+            goldstar[str(user["id"])] = args.stars
+            break
+    else:
+        print(f"user {args.user} not found", file=sys.stderr)
+        return 1
+
+    with open(os.path.join(SCRIPTDIR, "..", "ranking", "goldstar.json"), "w") as fp:
+        json.dump(goldstar, fp, indent=4)
+
+
+if __name__ == "__main__":
+    sys.exit(main())
