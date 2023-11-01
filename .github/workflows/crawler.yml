@@ -78,4 +78,4 @@ jobs:
         with:
           default_author: github_actions
           message: 'Update ranking files'
-          add: 'ranking/ranking.json'
+          add: 'ranking/ranking.json ranking/deleted-auto.json'
