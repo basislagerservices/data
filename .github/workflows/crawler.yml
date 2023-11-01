@@ -69,6 +69,10 @@ jobs:
             --state-file crawler-state.pickle \
             --output ranking/ranking.json
 
+      - name: 'Find deleted users'
+        run: |
+          scripts/join-deleted-users
+
       - name: 'Commit changes'
         uses: EndBug/add-and-commit@v9
         with:
