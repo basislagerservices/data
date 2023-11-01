@@ -19,6 +19,7 @@
 """Find deleted users.
 
 This script is a Python implementation of Tiak's shell script.
+It looks for users who were deleted before the user ID was added to the ranking.
 """
 
 import argparse
