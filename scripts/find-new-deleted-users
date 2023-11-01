@@ -17,10 +17,7 @@
 #
 
 
-"""Join the current ranking file with it's history to detect deleted users.
-
-This works for all rankings which contain a user ID.
-"""
+"""Find users who were deleted since the user ID was added to the ranking."""
 
 import argparse
 import contextlib
@@ -41,8 +38,13 @@ def main():
     rankingpath = os.path.relpath(
         os.path.join(SCRIPTDIR, "..", "ranking", "ranking.json")
     )
+
+    # We are only interested in users who are deleted in the current ranking.
+    # This ways we can still highlight them in the ranking.
     with open(rankingpath) as fp:
         current_ranking = json.load(fp)
+        usermap = {u["id"]: u["name"] for u in current_ranking["users"]}
+        current_usermap = usermap.copy()
 
     # Get list of commits to the ranking file.
     commits = sp.run(
@@ -51,9 +53,7 @@ def main():
         encoding="utf8",
     ).stdout.splitlines()
 
-    # Join user mappings until we reach the point where we can't get the user ID,
-    # starting with the current ranking.
-    usermap = {u["id"]: u["name"] for u in current_ranking["users"]}
+    # Join user IDs going back in time.
     for commit in commits:
         result = sp.run(
             ["git", "show", f"{commit}:{rankingpath}"],
@@ -66,14 +66,18 @@ def main():
         except KeyError:
             break
 
-    # Update and write the joined ranking.
-    for entry in current_ranking["users"]:
-        if entry["name"] == "gelöschter User":
-            with contextlib.suppress(KeyError):
-                entry["name"] = usermap[entry["id"]]
+    # Remove all users who are known in the current map or unknown in the
+    # cumulative map from the cumulative map.
+    # We end up with a map of really deleted users so we can mark them in the ranking.
+    def remove(id, name):
+        return current_usermap[id] != "gelöschter User" or name == "gelöschter User"
 
-    with open(rankingpath, "w") as fp:
-        json.dump(current_ranking, fp, indent=4)
+    usermap = {k: v for k, v in usermap.items() if not remove(k, v)}
+
+    with open(os.path.join(SCRIPTDIR, "..", "ranking", "deleted-auto.json"), "w") as fp:
+        json.dump(usermap, fp, indent=4)
+
+    print(f"found {len(usermap)} deleted users")
 
 
 if __name__ == "__main__":
