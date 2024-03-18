@@ -1,0 +1,91 @@
+#!/usr/bin/env python
+#
+# Copyright 2024 Basislager Services
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+
+"""Find status updates for danielf's cat."""
+
+import os
+import sys
+import argparse
+import json
+import asyncio
+import datetime as dt
+import pytz
+
+import tqdm
+
+from dstclient import WebAPI, TickerPosting
+
+
+SCRIPTDIR = os.path.dirname(os.path.abspath(__file__))
+STATUSFILE = os.path.join(SCRIPTDIR, "..", "magnus", "updates.json")
+TICKERS = [3000000209412]  # Tickers to crawl
+USERID = 43228  # UserID of danielf
+
+
+def statusfilter(p : TickerPosting) -> bool:
+    """Filter status postings."""
+    return p.user.id == USERID and p.title == "Statusupdate Magnus"
+
+
+async def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--window",
+        "-w",
+        type=int,
+        help="update window in days",
+    )
+    args = parser.parse_args()
+    starttime = dt.datetime(1970, 1, 1, tzinfo=pytz.utc)
+    if args.window is not None:
+        starttime = dt.datetime.now(tz=pytz.utc) - dt.timedelta(days=args.window)
+
+    # Read existing status postings if the file exists.
+    try:
+        with open(STATUSFILE) as fp:
+            statuspostings = json.load(fp)
+    except FileNotFoundError:
+        statuspostings = []
+
+    async with WebAPI() as api:
+        for ticker_id in TICKERS:
+            ticker = await api.get_ticker(ticker_id)
+            threads = [t async for t in api.get_ticker_threads(ticker) if t.published > starttime]
+            for thread in tqdm.tqdm(threads):
+                async for p in api.get_thread_postings(thread):
+                    if statusfilter(p):
+                        statuspostings.append({
+                            "timestamp": p.published.astimezone(pytz.timezone("Europe/Vienna")).strftime("%Y-%m-%d %H:%M:%S"),
+                            "ticker": p.thread.ticker.id,
+                            "thread": p.thread.id,
+                            "posting": p.id,
+                            "title": p.title,
+                            "message": p.message
+                        })
+
+    # Remove duplicates and sort.
+    statusdict = {e["posting"]: e for e in statuspostings}
+    statuspostings = list(statusdict.values())
+    statuspostings.sort(key=lambda e: e["timestamp"], reverse=True)
+
+    with open(STATUSFILE, "w") as fp:
+        json.dump(statuspostings, fp, indent=4)
+
+
+if __name__ == "__main__":
+    sys.exit(asyncio.run(main()))
