@@ -1,0 +1,53 @@
+#
+# Copyright 2021 Basislager Services
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+
+name: Magnus
+on:
+  schedule:
+    - cron: '15 7,13,19,1, * * *'
+  workflow_dispatch:
+
+jobs:
+  magnus:
+    name: 'Run crawler for Magnus updates and push results'
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+
+      - name: 'Install dependencies'
+        run: |
+          sudo apt-get update
+          curl -o /tmp/chromium-browser.deb             http://archive.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-browser_112.0.5615.49-0ubuntu0.18.04.1_amd64.deb
+          curl -o /tmp/chromium-browser-l10n.deb        http://archive.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-browser-l10n_112.0.5615.49-0ubuntu0.18.04.1_all.deb
+          curl -o /tmp/chromium-codecs-ffmpeg-extra.deb http://archive.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-codecs-ffmpeg-extra_112.0.5615.49-0ubuntu0.18.04.1_amd64.deb
+          sudo apt -f -y install /tmp/chromium-*.deb
+          pip install git+https://github.com/basislagerservices/dstclient.git
+
+      - name: 'Run crawler'
+        run: |
+          scripts/find-magnus-status-updates \
+            --window 2
+
+      - name: 'Commit changes'
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'Update Magnus update file'
+          add: 'magnus/updates.json'
