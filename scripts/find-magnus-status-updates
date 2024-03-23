@@ -39,7 +39,7 @@ USERID = 43228  # UserID of danielf
 
 def statusfilter(p : TickerPosting) -> bool:
     """Filter status postings."""
-    return p.user.id == USERID and p.title == "Statusupdate Magnus" and p.message is not None
+    return p.user.id == USERID and p.title and "Statusupdate Magnus" in p.title and p.message is not None
 
 
 async def main():
