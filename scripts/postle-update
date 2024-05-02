@@ -94,7 +94,8 @@ async def main():
                 postings.extend([p async for p in api.get_thread_postings(thread)])
 
     postings = [p for p in postings if posting_filter(p)]
-    choices = random.choices(postings, k=args.number_of_postings)
+    weights = [p.upvotes + p.downvotes for p in postings]
+    choices = random.choices(postings, k=args.number_of_postings, weights=weights)
 
     # Read the current postings dict.
     postle = dict()
