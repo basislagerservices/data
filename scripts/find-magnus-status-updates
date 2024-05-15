@@ -33,7 +33,7 @@ from dstclient import WebAPI, TickerPosting
 
 SCRIPTDIR = os.path.dirname(os.path.abspath(__file__))
 STATUSFILE = os.path.join(SCRIPTDIR, "..", "magnus", "updates.json")
-TICKERS = [3000000209412]  # Tickers to crawl
+TICKERS = [3000000220186]  # Tickers to crawl
 USERID = 43228  # UserID of danielf
 
 
