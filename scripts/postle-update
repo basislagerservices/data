@@ -21,6 +21,7 @@ import asyncio
 import contextlib
 import datetime as dt
 import json
+import math
 import os
 import random
 import sys
@@ -69,8 +70,14 @@ async def main():
         type=int,
         help="tickers to crawl",
     )
-    args = parser.parse_args()
+    parser.add_argument(
+        "--weights",
+        "-W",
+        choices=["up", "down", "updown", "logup", "logdown", "logupdown"],
+        help="weights for posting selection",
+    )
 
+    args = parser.parse_args()
     startdate = dt.datetime.now().astimezone(pytz.utc) - dt.timedelta(days=args.window)
 
     def thread_filter(t: Thread):
@@ -94,7 +101,21 @@ async def main():
                 postings.extend([p async for p in api.get_thread_postings(thread)])
 
     postings = [p for p in postings if posting_filter(p)]
-    weights = [p.upvotes + p.downvotes for p in postings]
+
+    weights = None
+    if args.weights == "up":
+        weights = [p.upvotes for p in postings]
+    elif args.weights == "down":
+        weights = [p.downvotes for p in postings]
+    elif args.weights == "updown":
+        weights = [p.upvotes + p.downvotes for p in postings]
+    elif args.weights == "logup":
+        weights = [math.log(p.upvotes) for p in postings]
+    elif args.weights == "logdown":
+        weights = [math.log(p.downvotes) for p in postings]
+    elif args.weights == "logupdown":
+        weights = [math.log(p.upvotes + p.downvotes) for p in postings]
+
     choices = random.choices(postings, k=args.number_of_postings, weights=weights)
 
     # Read the current postings dict.
