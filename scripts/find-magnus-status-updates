@@ -28,7 +28,7 @@ import pytz
 
 import tqdm
 
-from dstclient import WebAPI, TickerPosting
+from dstclient import DerStandardAPI, TickerPosting
 
 
 SCRIPTDIR = os.path.dirname(os.path.abspath(__file__))
@@ -62,7 +62,7 @@ async def main():
     except FileNotFoundError:
         statuspostings = []
 
-    async with WebAPI() as api:
+    async with DerStandardAPI() as api:
         for ticker_id in TICKERS:
             ticker = await api.get_ticker(ticker_id)
             threads = [t async for t in api.get_ticker_threads(ticker) if t.published > starttime]

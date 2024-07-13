@@ -18,7 +18,7 @@
 name: Magnus
 on:
   schedule:
-    - cron: '15 7,13,19,1, * * *'
+    - cron: '15 1 * * *'
   workflow_dispatch:
 
 jobs:
@@ -38,7 +38,7 @@ jobs:
           curl -o /tmp/chromium-browser-l10n.deb        http://archive.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-browser-l10n_112.0.5615.49-0ubuntu0.18.04.1_all.deb
           curl -o /tmp/chromium-codecs-ffmpeg-extra.deb http://archive.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-codecs-ffmpeg-extra_112.0.5615.49-0ubuntu0.18.04.1_amd64.deb
           sudo apt -f -y install /tmp/chromium-*.deb
-          pip install git+https://github.com/basislagerservices/dstclient.git
+          pip install git+https://github.com/basislagerservices/dstclient.git@8fbad7c
 
       - name: 'Run crawler'
         run: |
