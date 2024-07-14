@@ -26,7 +26,12 @@ jobs:
     name: 'Generate book and push results'
     runs-on: ubuntu-22.04
     steps:
+      - uses: de-vri-es/setup-git-credentials@v2
+        with:
+          credentials: ${{secrets.GH_CREDENTIALS}}
+
       - uses: actions/checkout@v2
+
       - uses: actions/setup-python@v2
         with:
           python-version: '3.12'
