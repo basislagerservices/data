@@ -93,7 +93,7 @@ async def main():
         )
 
     postings: list[Posting] = []
-    async with WebAPI() as api:
+    async with DerStandardAPI() as api:
         for ticker_id in tqdm.tqdm(args.tickers):
             ticker = await api.get_ticker(ticker_id)
             threads = api.get_ticker_threads(ticker)
