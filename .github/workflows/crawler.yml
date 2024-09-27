@@ -73,6 +73,7 @@ jobs:
             --ticker-id 3000000209412 \
             --ticker-id 3000000220186 \
             --ticker-id 3000000228986 \
+            --ticker-id 3000000238440 \
             --once \
             --continue \
             --state-file crawler-state.pickle \

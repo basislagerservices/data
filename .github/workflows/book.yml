@@ -73,6 +73,7 @@ jobs:
             --ticker-id 3000000209412 \
             --ticker-id 3000000220186 \
             --ticker-id 3000000228986 \
+            --ticker-id 3000000238440 \
             --book logbook \
             --output books/unsinnkable.pdf \
             --output books/unsinnkable.epub
@@ -98,6 +99,7 @@ jobs:
             --ticker-id 3000000209412 \
             --ticker-id 3000000220186 \
             --ticker-id 3000000228986 \
+            --ticker-id 3000000238440 \
             --book ersterpreis \
             --output books/ersterpreis.pdf \
             --output books/ersterpreis.epub
@@ -107,6 +109,7 @@ jobs:
           tickergadse-book \
             --ticker-id 3000000220186 \
             --ticker-id 3000000228986 \
+            --ticker-id 3000000238440 \
             --book schreibblockade \
             --output books/schreibblockade.pdf \
             --output books/schreibblockade.epub
