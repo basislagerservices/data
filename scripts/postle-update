@@ -38,6 +38,8 @@ import pytz
 SCRIPTDIR = os.path.dirname(os.path.abspath(__file__))
 POSTINGFILE = os.path.join(SCRIPTDIR, "..", "postle", "postings.json")
 
+VIENNA = pytz.timezone("Europe/Vienna")
+
 
 async def main():
     parser = argparse.ArgumentParser()
@@ -84,11 +86,13 @@ async def main():
         return t.published > startdate
 
     def posting_filter(p: Posting):
+        starttime = dt.time(6, tzinfo=VIENNA)
+        endtime = dt.time(22, tzinfo=VIENNA)
         return (
             p.parent_id is None
             and p.message
             and len(p.message.split()) > 5
-            and (dt.time(6) <= p.published.time() <= dt.time(22))
+            and (starttime <= p.published.time() <= endtime)
             and "http" not in p.message
         )
 
