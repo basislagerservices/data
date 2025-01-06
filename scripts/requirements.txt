@@ -1,2 +1,2 @@
-git+https://github.com/basislagerservices/dstclient.git
+git+https://github.com/basislagerservices/dstclient.git@c61eb77e00c436b4ccf37219f61bd25d9edd90f3
 matplotlib
