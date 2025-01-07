@@ -117,6 +117,14 @@ jobs:
             --output books/schreibblockade.pdf \
             --output books/schreibblockade.epub
 
+      - name: 'Run book generator for Rocky Docky'
+        run: |
+          tickergadse-book \
+            --ticker-id 3000000249530 \
+            --book rockydocky \
+            --output books/rockydocky.pdf \
+            --output books/rockydocky.epub
+
       - name: 'Commit changes'
         uses: EndBug/add-and-commit@v8
         with:
