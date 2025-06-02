@@ -76,6 +76,7 @@ jobs:
             --ticker-id 3000000238440 \
             --ticker-id 3000000249530 \
             --ticker-id 3000000258574 \
+            --ticker-id 3000000272333 \
             --book logbook \
             --output books/unsinnkable.pdf \
             --output books/unsinnkable.epub
@@ -104,6 +105,7 @@ jobs:
             --ticker-id 3000000238440 \
             --ticker-id 3000000249530 \
             --ticker-id 3000000258574 \
+            --ticker-id 3000000272333 \
             --book ersterpreis \
             --output books/ersterpreis.pdf \
             --output books/ersterpreis.epub
@@ -116,6 +118,7 @@ jobs:
             --ticker-id 3000000238440 \
             --ticker-id 3000000249530 \
             --ticker-id 3000000258574 \
+            --ticker-id 3000000272333 \
             --book schreibblockade \
             --output books/schreibblockade.pdf \
             --output books/schreibblockade.epub
@@ -125,6 +128,7 @@ jobs:
           tickergadse-book \
             --ticker-id 3000000249530 \
             --ticker-id 3000000258574 \
+            --ticker-id 3000000272333 \
             --book rockydocky \
             --output books/rockydocky.pdf \
             --output books/rockydocky.epub
