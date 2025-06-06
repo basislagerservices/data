@@ -1,5 +1,13 @@
 [
     {
+        "timestamp": "2025-06-05 11:27:43",
+        "ticker": 3000000272333,
+        "thread": 1000381920,
+        "posting": 1138530563,
+        "title": "Statusupdate Magnus",
+        "message": "Anruf der Tierklinik \r\nOP ist gut verlaufen um 15:15 hol ich ihn wieder ab"
+    },
+    {
         "timestamp": "2025-05-30 15:27:23",
         "ticker": 3000000258574,
         "thread": 1000381129,
