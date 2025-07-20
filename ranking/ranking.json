@@ -1,5 +1,5 @@
 {
-    "date": "19.07.2025 - 22:48 (UTC)",
+    "date": "20.07.2025 - 03:57 (UTC)",
     "users": [
         {
             "downvotes": 35,
@@ -380,18 +380,18 @@
             "upvotes": 47167
         },
         {
-            "downvotes": 641,
+            "downvotes": 643,
             "id": 228825,
             "name": "Winston Smith.",
-            "postings": 78274,
-            "upvotes": 124399
+            "postings": 78366,
+            "upvotes": 124457
         },
         {
             "downvotes": 71,
             "id": 505133,
             "name": "bluebirdfly",
-            "postings": 34346,
-            "upvotes": 64916
+            "postings": 34351,
+            "upvotes": 64921
         },
         {
             "downvotes": 3,
@@ -762,7 +762,7 @@
             "id": 736188,
             "name": "zachbichl",
             "postings": 39705,
-            "upvotes": 71268
+            "upvotes": 71269
         },
         {
             "downvotes": 187,
@@ -810,8 +810,8 @@
             "downvotes": 222,
             "id": 608902,
             "name": "Lemon Fresh",
-            "postings": 41033,
-            "upvotes": 86346
+            "postings": 41048,
+            "upvotes": 86357
         },
         {
             "downvotes": 304,
@@ -1412,8 +1412,8 @@
             "downvotes": 248,
             "id": 65953,
             "name": "fluffer",
-            "postings": 54631,
-            "upvotes": 116694
+            "postings": 54656,
+            "upvotes": 116725
         },
         {
             "downvotes": 146,
@@ -3099,8 +3099,8 @@
             "downvotes": 64,
             "id": 191867,
             "name": "schau genau!",
-            "postings": 15733,
-            "upvotes": 37134
+            "postings": 15734,
+            "upvotes": 37137
         },
         {
             "downvotes": 0,
@@ -3663,11 +3663,11 @@
             "upvotes": 1
         },
         {
-            "downvotes": 126,
+            "downvotes": 127,
             "id": 787886,
             "name": "dawn (denn immer wieder geht die Sonne auf)",
-            "postings": 52924,
-            "upvotes": 100133
+            "postings": 52930,
+            "upvotes": 100136
         },
         {
             "downvotes": 299,
@@ -5374,8 +5374,8 @@
             "downvotes": 196,
             "id": 511143,
             "name": "stierwascherIn",
-            "postings": 48349,
-            "upvotes": 82138
+            "postings": 48376,
+            "upvotes": 82168
         },
         {
             "downvotes": 0,
@@ -11345,8 +11345,8 @@
             "downvotes": 15,
             "id": 909091,
             "name": "Lovemeorleaveme",
-            "postings": 5214,
-            "upvotes": 10221
+            "postings": 5216,
+            "upvotes": 10226
         },
         {
             "downvotes": 0,
@@ -11496,11 +11496,11 @@
             "upvotes": 0
         },
         {
-            "downvotes": 2,
+            "downvotes": 5,
             "id": 934576,
             "name": "Narrative Speaker",
-            "postings": 387,
-            "upvotes": 431
+            "postings": 425,
+            "upvotes": 447
         },
         {
             "downvotes": 31,
@@ -12563,8 +12563,8 @@
             "downvotes": 5,
             "id": 850430,
             "name": "TAFKAS (the Artist formerly known as Sindelar)",
-            "postings": 1039,
-            "upvotes": 2604
+            "postings": 1040,
+            "upvotes": 2607
         },
         {
             "downvotes": 0,
@@ -12644,11 +12644,11 @@
             "upvotes": 9
         },
         {
-            "downvotes": 4,
+            "downvotes": 6,
             "id": 978250,
             "name": "\"Yes\", said Sophie (again)",
-            "postings": 2561,
-            "upvotes": 4172
+            "postings": 2581,
+            "upvotes": 4183
         },
         {
             "downvotes": 0,
@@ -12788,7 +12788,7 @@
             "id": 986454,
             "name": "emobsi 2.0",
             "postings": 6561,
-            "upvotes": 17794
+            "upvotes": 17795
         },
         {
             "downvotes": 2,
@@ -12857,8 +12857,8 @@
             "downvotes": 0,
             "id": 991638,
             "name": "DoubtOverall",
-            "postings": 190,
-            "upvotes": 382
+            "postings": 198,
+            "upvotes": 385
         }
     ]
 }
