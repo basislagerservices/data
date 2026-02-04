@@ -7,3 +7,4 @@ Keeping the data here avoids constant commits to other repositories.
 * `deleted.json`: List of deleted users. Users in this list were deleted before
   user IDs were added to the ranking, simplifying automatic detection.
 * `deleted-auto.json`: Automatically detected deleted users.
+* `user-aliases.json`: Manually maintained list of user aliases.
