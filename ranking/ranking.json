@@ -1,12 +1,12 @@
 {
-    "date": "05.02.2026 - 09:13 (UTC)",
+    "date": "05.02.2026 - 15:14 (UTC)",
     "users": [
         {
             "downvotes": 34,
             "id": 969189,
             "name": "hedgehog11",
-            "postings": 16947,
-            "upvotes": 35721
+            "postings": 16960,
+            "upvotes": 35744
         },
         {
             "downvotes": 35,
@@ -97,7 +97,7 @@
             "id": 173987,
             "name": "nixda15",
             "postings": 15132,
-            "upvotes": 21336
+            "upvotes": 21337
         },
         {
             "downvotes": 2,
@@ -131,15 +131,15 @@
             "downvotes": 166,
             "id": 504636,
             "name": "Nanunym",
-            "postings": 28470,
-            "upvotes": 71027
+            "postings": 28471,
+            "upvotes": 71031
         },
         {
             "downvotes": 260,
             "id": 98046,
             "name": "hosenwurm",
-            "postings": 36367,
-            "upvotes": 79254
+            "postings": 36407,
+            "upvotes": 79337
         },
         {
             "downvotes": 13,
@@ -163,11 +163,11 @@
             "upvotes": 7
         },
         {
-            "downvotes": 198,
+            "downvotes": 200,
             "id": 514406,
             "name": "gugg",
-            "postings": 40194,
-            "upvotes": 99834
+            "postings": 40205,
+            "upvotes": 99861
         },
         {
             "downvotes": 21,
@@ -264,8 +264,8 @@
             "downvotes": 464,
             "id": 21273,
             "name": "angmar hexenk\u00f6nig",
-            "postings": 86538,
-            "upvotes": 209827
+            "postings": 86576,
+            "upvotes": 209904
         },
         {
             "downvotes": 7,
@@ -327,8 +327,8 @@
             "downvotes": 387,
             "id": 83730,
             "name": "hhgttg",
-            "postings": 109503,
-            "upvotes": 208943
+            "postings": 109541,
+            "upvotes": 209013
         },
         {
             "downvotes": 266,
@@ -348,8 +348,8 @@
             "downvotes": 483,
             "id": 218644,
             "name": "Ro_Fl",
-            "postings": 63234,
-            "upvotes": 126564
+            "postings": 63269,
+            "upvotes": 126645
         },
         {
             "downvotes": 0,
@@ -397,8 +397,8 @@
             "downvotes": 83,
             "id": 505133,
             "name": "bluebirdfly",
-            "postings": 39559,
-            "upvotes": 75928
+            "postings": 39562,
+            "upvotes": 75930
         },
         {
             "downvotes": 3,
@@ -432,8 +432,8 @@
             "downvotes": 374,
             "id": 200468,
             "name": "sailor who eats only fish heads and tails",
-            "postings": 27505,
-            "upvotes": 53576
+            "postings": 27523,
+            "upvotes": 53616
         },
         {
             "downvotes": 22,
@@ -453,8 +453,8 @@
             "downvotes": 148,
             "id": 683056,
             "name": "Zirbomat",
-            "postings": 38077,
-            "upvotes": 95736
+            "postings": 38088,
+            "upvotes": 95770
         },
         {
             "downvotes": 0,
@@ -544,7 +544,7 @@
             "downvotes": 15,
             "id": 511521,
             "name": "Gunair",
-            "postings": 3264,
+            "postings": 3265,
             "upvotes": 5620
         },
         {
@@ -572,8 +572,8 @@
             "downvotes": 193,
             "id": 600689,
             "name": "Walter E. Kurtz",
-            "postings": 34611,
-            "upvotes": 64722
+            "postings": 34615,
+            "upvotes": 64737
         },
         {
             "downvotes": 0,
@@ -621,8 +621,8 @@
             "downvotes": 205,
             "id": 534707,
             "name": "Faulitier",
-            "postings": 69075,
-            "upvotes": 158805
+            "postings": 69141,
+            "upvotes": 158922
         },
         {
             "downvotes": 0,
@@ -691,8 +691,8 @@
             "downvotes": 118,
             "id": 170480,
             "name": "Prinz Karasek",
-            "postings": 15540,
-            "upvotes": 35219
+            "postings": 15541,
+            "upvotes": 35220
         },
         {
             "downvotes": 1,
@@ -768,8 +768,8 @@
             "downvotes": 82,
             "id": 736188,
             "name": "zachbichl",
-            "postings": 47469,
-            "upvotes": 86734
+            "postings": 47470,
+            "upvotes": 86739
         },
         {
             "downvotes": 205,
@@ -810,15 +810,15 @@
             "downvotes": 332,
             "id": 787239,
             "name": "Benni Weiss",
-            "postings": 71499,
-            "upvotes": 119192
+            "postings": 71531,
+            "upvotes": 119250
         },
         {
             "downvotes": 262,
             "id": 608902,
             "name": "Lemon Fresh",
-            "postings": 46308,
-            "upvotes": 98491
+            "postings": 46328,
+            "upvotes": 98549
         },
         {
             "downvotes": 306,
@@ -1041,8 +1041,8 @@
             "downvotes": 659,
             "id": 212754,
             "name": "U-Bahn Steuer",
-            "postings": 55272,
-            "upvotes": 96846
+            "postings": 55290,
+            "upvotes": 96880
         },
         {
             "downvotes": 0,
@@ -1062,8 +1062,8 @@
             "downvotes": 126,
             "id": 746899,
             "name": "reva mai",
-            "postings": 39361,
-            "upvotes": 96910
+            "postings": 39383,
+            "upvotes": 96967
         },
         {
             "downvotes": 28,
@@ -1118,8 +1118,8 @@
             "downvotes": 14,
             "id": 115990,
             "name": "Engelbert Ponemayr",
-            "postings": 2667,
-            "upvotes": 7840
+            "postings": 2670,
+            "upvotes": 7844
         },
         {
             "downvotes": 84,
@@ -1188,8 +1188,8 @@
             "downvotes": 140,
             "id": 533242,
             "name": "PostIer",
-            "postings": 63870,
-            "upvotes": 134698
+            "postings": 63887,
+            "upvotes": 134727
         },
         {
             "downvotes": 0,
@@ -1244,8 +1244,8 @@
             "downvotes": 127,
             "id": 524071,
             "name": "DerBanzai",
-            "postings": 29278,
-            "upvotes": 63890
+            "postings": 29306,
+            "upvotes": 63954
         },
         {
             "downvotes": 0,
@@ -1416,18 +1416,18 @@
             "upvotes": 70
         },
         {
-            "downvotes": 280,
+            "downvotes": 281,
             "id": 65953,
             "name": "fluffer",
-            "postings": 64762,
-            "upvotes": 139659
+            "postings": 64788,
+            "upvotes": 139720
         },
         {
-            "downvotes": 166,
+            "downvotes": 167,
             "id": 210001,
             "name": "silverback",
-            "postings": 41866,
-            "upvotes": 94311
+            "postings": 41905,
+            "upvotes": 94363
         },
         {
             "downvotes": 5,
@@ -1560,7 +1560,7 @@
             "id": 680467,
             "name": "Isidor von Seevilla",
             "postings": 21872,
-            "upvotes": 41768
+            "upvotes": 41770
         },
         {
             "downvotes": 8,
@@ -1594,8 +1594,8 @@
             "downvotes": 161,
             "id": 691260,
             "name": "Strange Alien",
-            "postings": 14147,
-            "upvotes": 23035
+            "postings": 14153,
+            "upvotes": 23049
         },
         {
             "downvotes": 6,
@@ -1643,8 +1643,8 @@
             "downvotes": 49,
             "id": 94989,
             "name": "huterl",
-            "postings": 17003,
-            "upvotes": 26930
+            "postings": 17027,
+            "upvotes": 26961
         },
         {
             "downvotes": 10,
@@ -1706,8 +1706,8 @@
             "downvotes": 313,
             "id": 672256,
             "name": "Ceroshl",
-            "postings": 91902,
-            "upvotes": 173854
+            "postings": 91926,
+            "upvotes": 173916
         },
         {
             "downvotes": 0,
@@ -1909,8 +1909,8 @@
             "downvotes": 255,
             "id": 177227,
             "name": "rantan plan",
-            "postings": 27182,
-            "upvotes": 76389
+            "postings": 27215,
+            "upvotes": 76505
         },
         {
             "downvotes": 1,
@@ -1951,8 +1951,8 @@
             "downvotes": 71,
             "id": 537938,
             "name": "Paulwid",
-            "postings": 14352,
-            "upvotes": 20702
+            "postings": 14373,
+            "upvotes": 20748
         },
         {
             "downvotes": 4,
@@ -2189,8 +2189,8 @@
             "downvotes": 183,
             "id": 76689,
             "name": "getmeifyoucan",
-            "postings": 44544,
-            "upvotes": 85759
+            "postings": 44561,
+            "upvotes": 85789
         },
         {
             "downvotes": 4,
@@ -2287,7 +2287,7 @@
             "downvotes": 47,
             "id": 791598,
             "name": "Krummi",
-            "postings": 23849,
+            "postings": 23850,
             "upvotes": 46514
         },
         {
@@ -2301,7 +2301,7 @@
             "downvotes": 0,
             "id": 748997,
             "name": "la torre",
-            "postings": 190,
+            "postings": 191,
             "upvotes": 111
         },
         {
@@ -2413,8 +2413,8 @@
             "downvotes": 2302,
             "id": 189749,
             "name": "Robin aus dem Wald",
-            "postings": 147561,
-            "upvotes": 238061
+            "postings": 147583,
+            "upvotes": 238116
         },
         {
             "downvotes": 0,
@@ -2469,8 +2469,8 @@
             "downvotes": 259,
             "id": 787482,
             "name": "PerfectStranger78",
-            "postings": 46551,
-            "upvotes": 63540
+            "postings": 46558,
+            "upvotes": 63556
         },
         {
             "downvotes": 10,
@@ -2917,8 +2917,8 @@
             "downvotes": 103,
             "id": 694608,
             "name": "Lametta",
-            "postings": 41753,
-            "upvotes": 52606
+            "postings": 41792,
+            "upvotes": 52641
         },
         {
             "downvotes": 113,
@@ -3106,8 +3106,8 @@
             "downvotes": 80,
             "id": 191867,
             "name": "schau genau!",
-            "postings": 19169,
-            "upvotes": 45644
+            "postings": 19180,
+            "upvotes": 45676
         },
         {
             "downvotes": 0,
@@ -3421,8 +3421,8 @@
             "downvotes": 591,
             "id": 800918,
             "name": "Die Eule Olga",
-            "postings": 122284,
-            "upvotes": 224161
+            "postings": 122385,
+            "upvotes": 224334
         },
         {
             "downvotes": 0,
@@ -3673,15 +3673,15 @@
             "downvotes": 181,
             "id": 787886,
             "name": "dawn (denn immer wieder geht die Sonne auf)",
-            "postings": 65990,
-            "upvotes": 125821
+            "postings": 66000,
+            "upvotes": 125847
         },
         {
             "downvotes": 399,
             "id": 801938,
             "name": "Florestina",
-            "postings": 54827,
-            "upvotes": 121052
+            "postings": 54838,
+            "upvotes": 121074
         },
         {
             "downvotes": 0,
@@ -3897,8 +3897,8 @@
             "downvotes": 615,
             "id": 229790,
             "name": "Surfer",
-            "postings": 85962,
-            "upvotes": 141963
+            "postings": 86030,
+            "upvotes": 142035
         },
         {
             "downvotes": 0,
@@ -4009,8 +4009,8 @@
             "downvotes": 243,
             "id": 795937,
             "name": "Nef",
-            "postings": 28017,
-            "upvotes": 55744
+            "postings": 28046,
+            "upvotes": 55803
         },
         {
             "downvotes": 0,
@@ -4104,11 +4104,11 @@
             "upvotes": 92
         },
         {
-            "downvotes": 694,
+            "downvotes": 695,
             "id": 13498,
             "name": "Bam Bam",
-            "postings": 82819,
-            "upvotes": 149039
+            "postings": 82920,
+            "upvotes": 149235
         },
         {
             "downvotes": 3,
@@ -4219,8 +4219,8 @@
             "downvotes": 128,
             "id": 30652,
             "name": "ch777",
-            "postings": 30443,
-            "upvotes": 53864
+            "postings": 30464,
+            "upvotes": 53899
         },
         {
             "downvotes": 396,
@@ -4947,8 +4947,8 @@
             "downvotes": 14,
             "id": 23470,
             "name": "catch of the day",
-            "postings": 2966,
-            "upvotes": 4310
+            "postings": 2971,
+            "upvotes": 4312
         },
         {
             "downvotes": 1,
@@ -5136,8 +5136,8 @@
             "downvotes": 147,
             "id": 752492,
             "name": "Anders Sj\u00f6gren",
-            "postings": 43078,
-            "upvotes": 80114
+            "postings": 43084,
+            "upvotes": 80134
         },
         {
             "downvotes": 0,
@@ -5556,8 +5556,8 @@
             "downvotes": 51,
             "id": 210119,
             "name": "Tapabble",
-            "postings": 15510,
-            "upvotes": 36104
+            "postings": 15518,
+            "upvotes": 36135
         },
         {
             "downvotes": 0,
@@ -6284,8 +6284,8 @@
             "downvotes": 46,
             "id": 633428,
             "name": "pretzelhands",
-            "postings": 10837,
-            "upvotes": 22345
+            "postings": 10856,
+            "upvotes": 22397
         },
         {
             "downvotes": 0,
@@ -6729,7 +6729,7 @@
             "upvotes": 2
         },
         {
-            "downvotes": 145,
+            "downvotes": 146,
             "id": 677136,
             "name": "Falke51",
             "postings": 49009,
@@ -8979,8 +8979,8 @@
             "downvotes": 230,
             "id": 797960,
             "name": "Kruzi.Fix",
-            "postings": 34542,
-            "upvotes": 44090
+            "postings": 34543,
+            "upvotes": 44093
         },
         {
             "downvotes": 0,
@@ -9350,8 +9350,8 @@
             "downvotes": 993,
             "id": 826492,
             "name": "iudicatrix",
-            "postings": 66112,
-            "upvotes": 154280
+            "postings": 66113,
+            "upvotes": 154281
         },
         {
             "downvotes": 0,
@@ -9830,11 +9830,11 @@
             "upvotes": 6098
         },
         {
-            "downvotes": 423,
+            "downvotes": 424,
             "id": 905184,
             "name": "gader pemmer",
-            "postings": 65994,
-            "upvotes": 128155
+            "postings": 66051,
+            "upvotes": 128233
         },
         {
             "downvotes": 0,
@@ -9854,8 +9854,8 @@
             "downvotes": 30,
             "id": 798299,
             "name": "Barbabright",
-            "postings": 7055,
-            "upvotes": 11974
+            "postings": 7062,
+            "upvotes": 11988
         },
         {
             "downvotes": 0,
@@ -9868,8 +9868,8 @@
             "downvotes": 640,
             "id": 828107,
             "name": "Hamsterbacke",
-            "postings": 115297,
-            "upvotes": 217787
+            "postings": 115299,
+            "upvotes": 217796
         },
         {
             "downvotes": 0,
@@ -11030,8 +11030,8 @@
             "downvotes": 308,
             "id": 43228,
             "name": "danielf",
-            "postings": 80821,
-            "upvotes": 146839
+            "postings": 80837,
+            "upvotes": 146859
         },
         {
             "downvotes": 0,
@@ -11205,8 +11205,8 @@
             "downvotes": 80,
             "id": 994668,
             "name": "WS+",
-            "postings": 15304,
-            "upvotes": 23570
+            "postings": 15332,
+            "upvotes": 23636
         },
         {
             "downvotes": 0,
@@ -11359,8 +11359,8 @@
             "downvotes": 28,
             "id": 909091,
             "name": "Lovemeorleaveme",
-            "postings": 7661,
-            "upvotes": 15080
+            "postings": 7662,
+            "upvotes": 15081
         },
         {
             "downvotes": 0,
@@ -11674,8 +11674,8 @@
             "downvotes": 32,
             "id": 929212,
             "name": "Gray Rhino",
-            "postings": 11962,
-            "upvotes": 28394
+            "postings": 11983,
+            "upvotes": 28449
         },
         {
             "downvotes": 14,
@@ -11856,8 +11856,8 @@
             "downvotes": 6,
             "id": 814751,
             "name": "Hairy Otter",
-            "postings": 1660,
-            "upvotes": 3153
+            "postings": 1686,
+            "upvotes": 3183
         },
         {
             "downvotes": 2,
@@ -11961,15 +11961,15 @@
             "downvotes": 193,
             "id": 936235,
             "name": "Laringo",
-            "postings": 19419,
-            "upvotes": 43567
+            "postings": 19473,
+            "upvotes": 43686
         },
         {
             "downvotes": 1,
             "id": 869368,
             "name": "K\u00fche sind die besseren Post(l)erinnen",
             "postings": 1309,
-            "upvotes": 3076
+            "upvotes": 3077
         },
         {
             "downvotes": 0,
@@ -12164,8 +12164,8 @@
             "downvotes": 26,
             "id": 797187,
             "name": "Schimpfm\u00fccke",
-            "postings": 10736,
-            "upvotes": 21174
+            "postings": 10778,
+            "upvotes": 21263
         },
         {
             "downvotes": 0,
@@ -12577,8 +12577,8 @@
             "downvotes": 6,
             "id": 850430,
             "name": "TAFKAS (the Artist formerly known as Sindelar)",
-            "postings": 1719,
-            "upvotes": 4537
+            "postings": 1724,
+            "upvotes": 4569
         },
         {
             "downvotes": 0,
@@ -12686,11 +12686,11 @@
             "upvotes": 2
         },
         {
-            "downvotes": 57,
+            "downvotes": 59,
             "id": 142825,
             "name": "mein toaster liegt am tierfriedhof",
-            "postings": 14832,
-            "upvotes": 34492
+            "postings": 14944,
+            "upvotes": 34758
         },
         {
             "downvotes": 0,
@@ -12808,8 +12808,8 @@
             "downvotes": 135,
             "id": 986454,
             "name": "emobsi 2.0",
-            "postings": 24887,
-            "upvotes": 65650
+            "postings": 24898,
+            "upvotes": 65686
         },
         {
             "downvotes": 7,
@@ -12836,8 +12836,8 @@
             "downvotes": 26,
             "id": 986853,
             "name": "Souldragon",
-            "postings": 5777,
-            "upvotes": 9382
+            "postings": 5798,
+            "upvotes": 9413
         },
         {
             "downvotes": 0,
@@ -12921,7 +12921,7 @@
             "id": 996360,
             "name": "Valice21",
             "postings": 7326,
-            "upvotes": 8279
+            "upvotes": 8283
         },
         {
             "downvotes": 0,
@@ -12973,11 +12973,11 @@
             "upvotes": 7
         },
         {
-            "downvotes": 190,
+            "downvotes": 192,
             "id": 998650,
             "name": "Milky Connaisseur",
-            "postings": 6393,
-            "upvotes": 10308
+            "postings": 6448,
+            "upvotes": 10365
         },
         {
             "downvotes": 2,
@@ -13015,11 +13015,11 @@
             "upvotes": 1
         },
         {
-            "downvotes": 9,
+            "downvotes": 10,
             "id": 1000552,
             "name": "Aputsiaq",
-            "postings": 3622,
-            "upvotes": 10436
+            "postings": 3636,
+            "upvotes": 10461
         },
         {
             "downvotes": 0,
@@ -13032,8 +13032,8 @@
             "downvotes": 14,
             "id": 1002402,
             "name": "Gbautii",
-            "postings": 3576,
-            "upvotes": 7981
+            "postings": 3641,
+            "upvotes": 8084
         },
         {
             "downvotes": 0,
@@ -13141,18 +13141,18 @@
             "upvotes": 3357
         },
         {
-            "downvotes": 96,
+            "downvotes": 98,
             "id": 1007603,
             "name": "qwertz12345",
-            "postings": 2890,
-            "upvotes": 5243
+            "postings": 2911,
+            "upvotes": 5273
         },
         {
             "downvotes": 24,
             "id": 1008300,
             "name": "Das ultimative Gute",
-            "postings": 985,
-            "upvotes": 2199
+            "postings": 992,
+            "upvotes": 2210
         },
         {
             "downvotes": 0,
@@ -13200,8 +13200,8 @@
             "downvotes": 3,
             "id": 1010669,
             "name": "System.gc()",
-            "postings": 401,
-            "upvotes": 668
+            "postings": 441,
+            "upvotes": 712
         },
         {
             "downvotes": 2,
@@ -13214,8 +13214,8 @@
             "downvotes": 0,
             "id": 1012291,
             "name": "Bam Bams Red Hair",
-            "postings": 8,
-            "upvotes": 0
+            "postings": 9,
+            "upvotes": 1
         },
         {
             "downvotes": 0,
