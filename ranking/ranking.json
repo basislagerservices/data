@@ -1,5 +1,5 @@
 {
-    "date": "04.03.2026 - 23:01 (UTC)",
+    "date": "05.03.2026 - 04:26 (UTC)",
     "users": [
         {
             "downvotes": 35,
@@ -264,8 +264,8 @@
             "downvotes": 470,
             "id": 21273,
             "name": "angmar hexenk\u00f6nig",
-            "postings": 87342,
-            "upvotes": 211744
+            "postings": 87345,
+            "upvotes": 211751
         },
         {
             "downvotes": 7,
@@ -327,8 +327,8 @@
             "downvotes": 396,
             "id": 83730,
             "name": "hhgttg",
-            "postings": 110954,
-            "upvotes": 211693
+            "postings": 110956,
+            "upvotes": 211695
         },
         {
             "downvotes": 266,
@@ -397,8 +397,8 @@
             "downvotes": 83,
             "id": 505133,
             "name": "bluebirdfly",
-            "postings": 40134,
-            "upvotes": 77212
+            "postings": 40138,
+            "upvotes": 77219
         },
         {
             "downvotes": 3,
@@ -454,7 +454,7 @@
             "id": 683056,
             "name": "Zirbomat",
             "postings": 39270,
-            "upvotes": 98746
+            "upvotes": 98750
         },
         {
             "downvotes": 0,
@@ -1083,8 +1083,8 @@
             "downvotes": 514,
             "id": 731500,
             "name": "Nein! - Doch! - Ooohhh...",
-            "postings": 95237,
-            "upvotes": 143407
+            "postings": 95238,
+            "upvotes": 143408
         },
         {
             "downvotes": 18,
@@ -1426,8 +1426,8 @@
             "downvotes": 170,
             "id": 210001,
             "name": "silverback",
-            "postings": 43010,
-            "upvotes": 97290
+            "postings": 43011,
+            "upvotes": 97292
         },
         {
             "downvotes": 5,
@@ -2917,8 +2917,8 @@
             "downvotes": 106,
             "id": 694608,
             "name": "Lametta",
-            "postings": 42741,
-            "upvotes": 54030
+            "postings": 42742,
+            "upvotes": 54031
         },
         {
             "downvotes": 113,
@@ -3106,8 +3106,8 @@
             "downvotes": 81,
             "id": 191867,
             "name": "schau genau!",
-            "postings": 19703,
-            "upvotes": 46949
+            "postings": 19706,
+            "upvotes": 46953
         },
         {
             "downvotes": 0,
@@ -3673,8 +3673,8 @@
             "downvotes": 184,
             "id": 787886,
             "name": "dawn (denn immer wieder geht die Sonne auf)",
-            "postings": 67435,
-            "upvotes": 128730
+            "postings": 67439,
+            "upvotes": 128737
         },
         {
             "downvotes": 409,
@@ -4219,8 +4219,8 @@
             "downvotes": 141,
             "id": 30652,
             "name": "ch777",
-            "postings": 32120,
-            "upvotes": 56081
+            "postings": 32121,
+            "upvotes": 56085
         },
         {
             "downvotes": 396,
@@ -5556,8 +5556,8 @@
             "downvotes": 51,
             "id": 210119,
             "name": "Tapabble",
-            "postings": 15979,
-            "upvotes": 37150
+            "postings": 15982,
+            "upvotes": 37153
         },
         {
             "downvotes": 0,
@@ -9714,8 +9714,8 @@
             "downvotes": 21,
             "id": 685713,
             "name": "Crims0",
-            "postings": 4846,
-            "upvotes": 4970
+            "postings": 4859,
+            "upvotes": 4984
         },
         {
             "downvotes": 0,
@@ -11027,11 +11027,11 @@
             "upvotes": 6
         },
         {
-            "downvotes": 311,
+            "downvotes": 312,
             "id": 43228,
             "name": "danielf",
-            "postings": 82025,
-            "upvotes": 149075
+            "postings": 82032,
+            "upvotes": 149087
         },
         {
             "downvotes": 0,
@@ -11205,8 +11205,8 @@
             "downvotes": 95,
             "id": 994668,
             "name": "WS+",
-            "postings": 17108,
-            "upvotes": 26478
+            "postings": 17138,
+            "upvotes": 26489
         },
         {
             "downvotes": 0,
@@ -11359,8 +11359,8 @@
             "downvotes": 30,
             "id": 909091,
             "name": "Lovemeorleaveme",
-            "postings": 8122,
-            "upvotes": 15959
+            "postings": 8124,
+            "upvotes": 15961
         },
         {
             "downvotes": 0,
@@ -13088,8 +13088,8 @@
             "downvotes": 19,
             "id": 1004671,
             "name": "perfect framer",
-            "postings": 1576,
-            "upvotes": 2884
+            "postings": 1578,
+            "upvotes": 2886
         },
         {
             "downvotes": 0,
@@ -13272,6 +13272,13 @@
             "name": "Nornen-Emiss\u00e4r",
             "postings": 8,
             "upvotes": 22
+        },
+        {
+            "downvotes": 0,
+            "id": 1015142,
+            "name": "ungemein schlechter User",
+            "postings": 14,
+            "upvotes": 2
         }
     ]
 }
