@@ -30,16 +30,30 @@ import tqdm
 
 from dstclient import DerStandardAPI, TickerPosting
 
-
 SCRIPTDIR = os.path.dirname(os.path.abspath(__file__))
 STATUSFILE = os.path.join(SCRIPTDIR, "..", "magnus", "updates.json")
-TICKERS = [3000000220186, 3000000228986, 3000000238440, 3000000249530, 3000000258574, 3000000272333, 3000000285971, 3000000299289]  # Tickers to crawl
+TICKERS = [
+    3000000220186,
+    3000000228986,
+    3000000238440,
+    3000000249530,
+    3000000258574,
+    3000000272333,
+    3000000285971,
+    3000000299289,
+    3000000312844,
+]  # Tickers to crawl
 USERID = 43228  # UserID of danielf
 
 
-def statusfilter(p : TickerPosting) -> bool:
+def statusfilter(p: TickerPosting) -> bool:
     """Filter status postings."""
-    return p.user.id == USERID and p.title and "Statusupdate Magnus" in p.title and p.message is not None
+    return (
+        p.user.id == USERID
+        and p.title
+        and "Statusupdate Magnus" in p.title
+        and p.message is not None
+    )
 
 
 async def main():
@@ -65,18 +79,26 @@ async def main():
     async with DerStandardAPI() as api:
         for ticker_id in TICKERS:
             ticker = await api.get_ticker(ticker_id)
-            threads = [t async for t in api.get_ticker_threads(ticker) if t.published > starttime]
+            threads = [
+                t
+                async for t in api.get_ticker_threads(ticker)
+                if t.published > starttime
+            ]
             for thread in tqdm.tqdm(threads):
                 async for p in api.get_thread_postings(thread):
                     if statusfilter(p):
-                        statuspostings.append({
-                            "timestamp": p.published.astimezone(pytz.timezone("Europe/Vienna")).strftime("%Y-%m-%d %H:%M:%S"),
-                            "ticker": p.thread.ticker.id,
-                            "thread": p.thread.id,
-                            "posting": p.id,
-                            "title": p.title,
-                            "message": p.message
-                        })
+                        statuspostings.append(
+                            {
+                                "timestamp": p.published.astimezone(
+                                    pytz.timezone("Europe/Vienna")
+                                ).strftime("%Y-%m-%d %H:%M:%S"),
+                                "ticker": p.thread.ticker.id,
+                                "thread": p.thread.id,
+                                "posting": p.id,
+                                "title": p.title,
+                                "message": p.message,
+                            }
+                        )
 
     # Remove duplicates and sort.
     statusdict = {e["posting"]: e for e in statuspostings}
