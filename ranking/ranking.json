@@ -1,5 +1,5 @@
 {
-    "date": "10.04.2026 - 14:40 (UTC)",
+    "date": "10.04.2026 - 15:07 (UTC)",
     "users": [
         {
             "downvotes": 37,
@@ -264,8 +264,8 @@
             "downvotes": 477,
             "id": 21273,
             "name": "angmar hexenk\u00f6nig",
-            "postings": 88570,
-            "upvotes": 214906
+            "postings": 88573,
+            "upvotes": 214913
         },
         {
             "downvotes": 7,
@@ -432,8 +432,8 @@
             "downvotes": 381,
             "id": 200468,
             "name": "sailor who eats only fish heads and tails",
-            "postings": 27942,
-            "upvotes": 54407
+            "postings": 27943,
+            "upvotes": 54409
         },
         {
             "downvotes": 22,
@@ -656,8 +656,8 @@
             "downvotes": 370,
             "id": 561576,
             "name": "toad2",
-            "postings": 98284,
-            "upvotes": 230930
+            "postings": 98286,
+            "upvotes": 230933
         },
         {
             "downvotes": 6,
@@ -768,8 +768,8 @@
             "downvotes": 86,
             "id": 736188,
             "name": "zachbichl",
-            "postings": 49346,
-            "upvotes": 90437
+            "postings": 49347,
+            "upvotes": 90438
         },
         {
             "downvotes": 205,
@@ -1188,8 +1188,8 @@
             "downvotes": 148,
             "id": 533242,
             "name": "PostIer",
-            "postings": 67329,
-            "upvotes": 141460
+            "postings": 67332,
+            "upvotes": 141470
         },
         {
             "downvotes": 0,
@@ -2190,7 +2190,7 @@
             "id": 76689,
             "name": "getmeifyoucan",
             "postings": 45637,
-            "upvotes": 87714
+            "upvotes": 87715
         },
         {
             "downvotes": 4,
@@ -2412,9 +2412,9 @@
         {
             "downvotes": 2372,
             "id": 189749,
-            "name": "Robin aus dem Wald",
-            "postings": 153328,
-            "upvotes": 248125
+            "name": "gel\u00f6schter User",
+            "postings": 153326,
+            "upvotes": 248124
         },
         {
             "downvotes": 0,
@@ -2469,7 +2469,7 @@
             "downvotes": 265,
             "id": 787482,
             "name": "PerfectStranger78",
-            "postings": 48416,
+            "postings": 48417,
             "upvotes": 66663
         },
         {
@@ -3897,8 +3897,8 @@
             "downvotes": 655,
             "id": 229790,
             "name": "Surfer",
-            "postings": 90604,
-            "upvotes": 148080
+            "postings": 90611,
+            "upvotes": 148085
         },
         {
             "downvotes": 0,
@@ -4121,8 +4121,8 @@
             "downvotes": 6,
             "id": 805519,
             "name": "Die Gadse",
-            "postings": 2403,
-            "upvotes": 3629
+            "postings": 2410,
+            "upvotes": 3639
         },
         {
             "downvotes": 23,
@@ -5640,8 +5640,8 @@
             "downvotes": 13,
             "id": 572494,
             "name": "lizenz",
-            "postings": 2690,
-            "upvotes": 4690
+            "postings": 2692,
+            "upvotes": 4692
         },
         {
             "downvotes": 0,
@@ -9834,7 +9834,7 @@
             "id": 905184,
             "name": "gader pemmer",
             "postings": 71396,
-            "upvotes": 137842
+            "upvotes": 137845
         },
         {
             "downvotes": 0,
@@ -9854,8 +9854,8 @@
             "downvotes": 31,
             "id": 798299,
             "name": "Barbabright",
-            "postings": 8469,
-            "upvotes": 14365
+            "postings": 8472,
+            "upvotes": 14369
         },
         {
             "downvotes": 0,
@@ -11030,8 +11030,8 @@
             "downvotes": 316,
             "id": 43228,
             "name": "danielf",
-            "postings": 84345,
-            "upvotes": 153017
+            "postings": 84350,
+            "upvotes": 153031
         },
         {
             "downvotes": 0,
@@ -12959,6 +12959,13 @@
             "upvotes": 12
         },
         {
+            "downvotes": 0,
+            "id": 189749,
+            "name": "Robin aus dem Wald",
+            "postings": 2,
+            "upvotes": 1
+        },
+        {
             "downvotes": 1,
             "id": 204433,
             "name": "snoepje",
@@ -13137,8 +13144,8 @@
             "downvotes": 128,
             "id": 1007603,
             "name": "qwertz12345",
-            "postings": 5909,
-            "upvotes": 10285
+            "postings": 5916,
+            "upvotes": 10295
         },
         {
             "downvotes": 35,
@@ -13438,8 +13445,8 @@
             "downvotes": 0,
             "id": 1018415,
             "name": "Das kleine Monster",
-            "postings": 105,
-            "upvotes": 186
+            "postings": 113,
+            "upvotes": 194
         }
     ]
 }
