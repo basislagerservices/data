@@ -80,6 +80,7 @@ jobs:
             --ticker-id 3000000285971 \
             --ticker-id 3000000299289 \
             --ticker-id 3000000312844 \
+            --ticker-id 3000000330248 \
             --book logbook \
             --output books/unsinnkable.pdf \
             --output books/unsinnkable.epub
@@ -112,6 +113,7 @@ jobs:
             --ticker-id 3000000285971 \
             --ticker-id 3000000299289 \
             --ticker-id 3000000312844 \
+            --ticker-id 3000000330248 \
             --book ersterpreis \
             --output books/ersterpreis.pdf \
             --output books/ersterpreis.epub
@@ -125,6 +127,7 @@ jobs:
             --ticker-id 3000000285971 \
             --ticker-id 3000000299289 \
             --ticker-id 3000000312844 \
+            --ticker-id 3000000330248 \
             --book rockydocky \
             --output books/rockydocky.pdf \
             --output books/rockydocky.epub

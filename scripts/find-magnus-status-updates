@@ -42,6 +42,7 @@ TICKERS = [
     3000000285971,
     3000000299289,
     3000000312844,
+    3000000330248,
 ]  # Tickers to crawl
 USERID = 43228  # UserID of danielf
 
