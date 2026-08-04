@@ -70,7 +70,7 @@ def main():
     # cumulative map from the cumulative map.
     # We end up with a map of really deleted users so we can mark them in the ranking.
     def remove(id, name):
-        return current_usermap[id] != "gelöschter User" or name == "gelöschter User"
+        return current_usermap.get(id) != "gelöschter User" or name == "gelöschter User"
 
     usermap = {k: v for k, v in usermap.items() if not remove(k, v)}
 
