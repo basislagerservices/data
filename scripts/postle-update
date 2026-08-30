@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright 2023-2024 Basislager Services
+# Copyright 2023-2026 Basislager Services
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -27,13 +27,10 @@ import random
 import sys
 
 import dateutil.parser as dateparser
-
-from dstclient import *
-
-import tqdm
-
 import pytz
-
+import tqdm
+from zeitungsente.derstandard import WebAPI
+from zeitungsente.derstandard.types import WebThread, WebTickerPosting, WebUser
 
 SCRIPTDIR = os.path.dirname(os.path.abspath(__file__))
 POSTINGFILE = os.path.join(SCRIPTDIR, "..", "postle", "postings.json")
@@ -61,7 +58,7 @@ async def main():
         "--start-date",
         "-s",
         type=dateparser.parse,
-        default=dt.datetime.now() + dt.timedelta(days=1),
+        default=dt.datetime.now(tz=dt.UTC) + dt.timedelta(days=1),
         help="starting date the selected postings are published",
     )
     parser.add_argument(
@@ -82,27 +79,26 @@ async def main():
     args = parser.parse_args()
     startdate = dt.datetime.now().astimezone(pytz.utc) - dt.timedelta(days=args.window)
 
-    def thread_filter(t: Thread):
+    def thread_filter(t: WebThread):
         return t.published > startdate
 
-    def posting_filter(p: Posting):
+    def posting_filter(p: WebTickerPosting):
         starttime = dt.time(6, tzinfo=VIENNA)
         endtime = dt.time(22, tzinfo=VIENNA)
         return (
-            p.parent_id is None
+            p.parent is None
             and p.message
             and len(p.message.split()) > 5
             and (starttime <= p.published.time() <= endtime)
             and "http" not in p.message
         )
 
-    postings: list[Posting] = []
-    async with DerStandardAPI() as api:
+    postings: list[WebTickerPosting] = []
+    async with WebAPI() as api:
         for ticker_id in tqdm.tqdm(args.tickers):
-            ticker = await api.get_ticker(ticker_id)
-            threads = api.get_ticker_threads(ticker)
+            threads = api.get_ticker_threads(ticker_id)
             for thread in tqdm.tqdm([t async for t in threads if thread_filter(t)]):
-                postings.extend([p async for p in api.get_thread_postings(thread)])
+                postings.extend([p async for p in api.get_thread_postings(ticker_id, thread.legacy_id)])
 
     postings = [p for p in postings if posting_filter(p)]
 
@@ -124,20 +120,20 @@ async def main():
 
     # Read the current postings dict.
     postle = dict()
-    with contextlib.suppress(FileNotFoundError):
-        with open(POSTINGFILE, "r") as fp:
-            postle = json.load(fp)
+    with contextlib.suppress(FileNotFoundError), open(POSTINGFILE, "r") as fp:
+        postle = json.load(fp)
 
     date = args.start_date.date()
-    for p in choices:
-        postle[date.isoformat()] = {
-            "user": p.user.name,
-            "title": p.title,
-            "message": p.message,
-            "upvotes": p.upvotes,
-            "downvotes": p.downvotes,
-        }
-        date += dt.timedelta(days=1)
+    async with WebAPI() as api:
+        for p in choices:
+            postle[date.isoformat()] = {
+                "user": (await api.get_user(p.user)).name,
+                "title": p.title,
+                "message": p.message,
+                "upvotes": p.upvotes,
+                "downvotes": p.downvotes,
+            }
+            date += dt.timedelta(days=1)
 
     with open(POSTINGFILE, "w") as fp:
         json.dump(postle, fp, indent=4)
